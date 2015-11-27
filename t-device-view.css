@@ -8,6 +8,12 @@
     width: 360px;
     height: 640px;
     margin: 65px auto;
+    /*
+    since the `:after` element goes beyond the height of
+    parent element we need following margin, it is a hack
+    TODO: style the device view properly
+     */
+    margin-bottom: 140px;
 }
 
 :host([device=phone][landscape]) {
@@ -19,6 +25,12 @@
     width: 768px;
     height: 1024px;
     margin: 65px auto;
+    /*
+    since the `:after` element goes beyond the height of
+    parent element we need following margin, it is a hack
+    TODO: style the device view properly
+     */
+    margin-bottom: 140px;
 }
 
 :host([device=tablet][landscape]) {
