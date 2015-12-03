@@ -81,10 +81,13 @@
     margin-top: -28px;
 }
 
-.device-wrapper > ::content,
-.device-wrapper > ::content > * {
-    width: 100%;
-    height: 100%;
+
+:host([device=phone]) .device-wrapper ::content > *,
+:host([device=tablet]) .device-wrapper ::content > *,
+:host([device=phone]) .device-wrapper,
+:host([device=tablet]) .device-wrapper  {
+    height: 100% !important;
+    width: 100% !important;
 }
 
 .device-wrapper > ::content > *  {
