@@ -7,7 +7,7 @@
                 "name": "View",
                 "type": "options",
                 "values": ["tablet", "phone"],
-                "value": "tablet"
+                "index": 0
             }
         }
     },{
